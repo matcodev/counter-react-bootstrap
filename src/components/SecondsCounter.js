@@ -1,13 +1,13 @@
 import React from "react";
 import SecondCard from "./SecondCard";
 
-const SecondsCounter = () => {
+const SecondsCounter = (props) => {
 
-
+  console.log('aqui')
 
   return (
     <div className="container my-5">
-      <div className="card d-flex flex-row py-3 px-5 bg-dark">
+      <div className="col-sm-12 card d-flex flex-row py-3 px-5 bg-dark">
           
         <div className="card text-center mx-2" style={{ width: "8rem" }}>
           <div className="card-body">
@@ -16,22 +16,22 @@ const SecondsCounter = () => {
         </div>
 
         <SecondCard 
-            seconds = {0}
+            seconds = {props.num6 % 10}
         />
          <SecondCard 
-            seconds = {0}
+            seconds = {props.num5 % 10}
         />
          <SecondCard 
-            seconds = {0}
+            seconds = {props.num4 % 10}
         />
          <SecondCard 
-            seconds = {0}
+            seconds = {props.num3 % 10}
         />
          <SecondCard 
-            seconds = {0}
+            seconds = {props.num2 % 10}
         />
          <SecondCard 
-            seconds = {0}
+            seconds = {props.num1 % 10}
         />
       </div>
     </div>
